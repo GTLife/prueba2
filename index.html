@@ -30,17 +30,13 @@
     <div class="d-none d-xl-block">
       <header id="Fondo">
 
-        <audio id="miAudio" autoplay>
-          <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
-          <source src="./Imagenes/Zelda.mp3" type="audio/mpeg">
-          <source src="./Imagenes/Zelda.mp3" type="audio/ogg">
-          <source src="./Imagenes/Zelda.mp3" type="audio/wav">
-          Tu navegador no soporta la reproducción de audio.
-      </audio>
-
       <video autoplay muted loop class="background-video">
           <source src="./Imagenes/Video de fondo .MP4" type="video/mp4">
+          
       </video>
+      <audio>
+        <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
+    </audio>
 
       <div class="content">
         <div class="container">
@@ -54,11 +50,17 @@
                 </p>
               </div>
             </div>
-            <div class="col" style="background: linear-gradient(to bottom, #000000 ,#0066ff); border: 5px solid rgb(105, 105, 105); padding: 30px 10px; margin-top: -5px; border-radius: 0px 0px 60px 60px;">
-              <div style="display: flex; justify-content: center; align-items: center; ">
-                <p style="font-size: 35px; color: rgb(255, 255, 255);"><img width="50px" src="./Imagenes/Espadas/6. Espada de Elementium.png" alt=""><b>Dark KOMBAT</b><img width="50px" src="./Imagenes/Espadas/6. Espada de Elementium.png" alt=""></p>
+              <div class="col" style="display: flex; justify-content: center; align-items: center;">
+                <div style="display: flex; justify-content: center; align-items: center;">
+                  
+                  <a class="nav-link" href="#" target="_blank">
+                    <button id="Jugar" style="padding: 16px 40px;">
+                      <span>Comenzar a Jugar</span>
+                      <i style="margin-left: 10px;" class="bi bi-arrow-up-right-circle-fill"></i>
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div>
             <div class="col" style="display: flex; justify-content: center; align-items: center;">
               <div style="display: flex; justify-content: center; align-items: center;">
                 
@@ -69,6 +71,41 @@
                   </button>
                 </a>
                 
+
+                <audio id="miAudio" >
+                  <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
+              </audio>
+              
+              <button id="playButton" style="border: none; background-color: transparent;" ><i style="color: #ffffff; font-size: 30px; margin-left: 30px;" class="bi bi-bell-fill"></i></button>
+              <button id="stopButton" style="display:none; border: none;  background-color: transparent;"><i style="color: #ffffff; font-size: 30px; margin-left: 30px;"  class="bi bi-bell-slash-fill"></i></button>
+              
+              <script>
+                  var audio = document.getElementById("miAudio");
+                  var playButton = document.getElementById("playButton");
+                  var stopButton = document.getElementById("stopButton");
+          
+
+                   // Ajustar el volumen al 30%
+                  audio.volume = 0.2;
+
+
+
+                  // Reproducir el audio cuando se haga clic en el botón de reproducción
+                  playButton.addEventListener("click", function() {
+                      audio.play();
+                      playButton.style.display = "none";
+                      stopButton.style.display = "inline";
+                  });
+          
+                  // Detener el audio y reiniciarlo al comienzo cuando se haga clic en el botón de detener
+                  stopButton.addEventListener("click", function() {
+                      audio.pause();        // Pausar el audio
+                      stopButton.style.display = "none";
+                      playButton.style.display = "inline";
+                  });
+              </script>
+
+
               </div>
             </div>
           </div>
@@ -78,24 +115,6 @@
       <br>
       <br>
       <br>
-
-        <div class="container">
-          <div class="row">
-            
-            <div class="col" style="display: flex; justify-content: center; align-items: center;">
-              <div style="display: flex; justify-content: center; align-items: center;">
-                
-                <a class="nav-link" href="#" target="_blank">
-                  <button id="Jugar" style="padding: 16px 40px;">
-                    <span>Comenzar a Jugar</span>
-                    <i style="margin-left: 10px;" class="bi bi-arrow-up-right-circle-fill"></i>
-                  </button>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div> 
     </div>
 
    
@@ -375,6 +394,15 @@
 
     <div class="d-block d-xl-none">
       <header id="Fondo2">
+
+
+        <audio id="miAudio" autoplay>
+          <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
+          <source src="./Imagenes/Zelda.mp3" type="audio/mpeg">
+          <source src="./Imagenes/Zelda.mp3" type="audio/ogg">
+          <source src="./Imagenes/Zelda.mp3" type="audio/wav">
+          Tu navegador no soporta la reproducción de audio.
+      </audio>
 
         <video autoplay muted loop class="background-video" id="background-video">
             <source src="./Imagenes/VideoF.mp4" type="video/mp4">
