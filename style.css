@@ -1,0 +1,130 @@
+
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el área */
+    z-index: -1; /* Coloca el video detrás del contenido */
+    opacity: 0.4;
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Coloca el contenido encima del video */
+    color: white; /* Asegura que el texto sea visible */
+}
+
+
+
+
+
+
+
+#video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000px;
+    width: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el área */
+    z-index: -1; /* Coloca el video detrás del contenido */
+    opacity: 0.2;
+}
+
+#content {
+    position: relative;
+    z-index: 1; /* Coloca el contenido encima del video */
+    color: white; /* Asegura que el texto sea visible */
+}
+
+
+
+
+
+
+
+
+.fruktur-regular {
+    font-family: "Fruktur", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+#Jugar{
+
+    display: flex;
+    align-items: center;
+    background-color: #0066ff;  /* Color de fondo */
+    color: white; /* Color del texto e íconos */
+    border: none; /* Sin borde */
+    padding: 10px 30px; /* Espaciado interno */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    font-size: 16px; /* Tamaño de la fuente */
+    box-shadow: 0px 0px 30px #0066ff;
+
+
+}
+
+
+
+#Jugar:hover{
+
+box-shadow: 0px 0px 50px #0066ff;
+
+}
+
+
+#WP{
+
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #000000 ,#0066ff);  /* Color de fondo */
+    color: white; /* Color del texto e íconos */
+    border: none; /* Sin borde */
+    padding: 20px 70px; /* Espaciado interno */
+    border-radius: 50px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano */
+    font-size: 16px; /* Tamaño de la fuente */
+
+}
+
+
+
+#WP:hover{
+    box-shadow: 0px 0px 20px #0066ff;
+    
+}
+
+
+        /* Animación para girar la imagen */
+        @keyframes rotateX {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Estilo para la imagen */
+        #token {
+            animation: rotateX 10s linear infinite; /* Aplica la animación de rotación */
+        }
