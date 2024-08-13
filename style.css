@@ -4,6 +4,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    background-size: cover;
 }
 
 .background-video {
@@ -33,17 +34,17 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    
 }
 
 #background-video {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1000px;
+    height: 350px;
     width: 100%;
     object-fit: cover; /* Asegura que el video cubra todo el área */
     z-index: -1; /* Coloca el video detrás del contenido */
-    opacity: 0.2;
 }
 
 #content {
@@ -96,22 +97,26 @@ box-shadow: 0px 0px 50px #0066ff;
 
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, #000000 ,#0066ff);  /* Color de fondo */
-    color: white; /* Color del texto e íconos */
-    border: none; /* Sin borde */
-    padding: 20px 70px; /* Espaciado interno */
-    border-radius: 50px; /* Bordes redondeados */
-    cursor: pointer; /* Cursor en forma de mano */
-    font-size: 16px; /* Tamaño de la fuente */
+    border: 2px solid rgb(255, 255, 255);  
+    background-color: transparent;
+    height: 60px; 
+    width: 250px; 
+    border-radius: 50px;
+    font-size: 16px;
+    color: #ffffff;
 
 }
 
 
 
 #WP:hover{
+    
     box-shadow: 0px 0px 20px #0066ff;
     
 }
+
+
+
 
 
         /* Animación para girar la imagen */
@@ -135,20 +140,24 @@ box-shadow: 0px 0px 50px #0066ff;
 
             display: flex;
             align-items: center;
-            background-color: #ffffff;  /* Color de fondo */
-            color: rgb(0, 0, 0); /* Color del texto e íconos */
-            border: none; /* Sin borde */
-            padding: 20px 70px; /* Espaciado interno */
-            border-radius: 50px; /* Bordes redondeados */
-            cursor: pointer; /* Cursor en forma de mano */
-            font-size: 16px; /* Tamaño de la fuente */
+            border: 2px solid rgb(255, 255, 255);  
+            background-color: transparent;
+            height: 60px; 
+            width: 250px; 
+            border-radius: 50px;
+            font-size: 16px;
+            color: #ffffff;
+        
         
         }
         
         
         
         #WPI:hover{
+            background-color: white;
+            border: none;
             box-shadow: 0px 0px 20px #ffffff;
+            color: black;
             
         }
         
