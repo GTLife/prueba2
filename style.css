@@ -8,7 +8,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 500px;
+    height: 550px;
     width: 100%;
     object-fit: cover; /* Asegura que el video cubra todo el área */
     z-index: -1; /* Coloca el video detrás del contenido */
@@ -38,7 +38,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 350px;
+    height: 450px;
     width: 100%;
     object-fit: cover; /* Asegura que el video cubra todo el área */
     z-index: -1; /* Coloca el video detrás del contenido */
