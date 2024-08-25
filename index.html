@@ -37,16 +37,15 @@
         <div class="container" >
           <div class="row" style="padding-top: 30px;">
             <div class="col" style="display: flex; justify-content: center; align-items: center;">
-              <div style="border: 2px solid rgb(255, 255, 255);  height: 70px; width: 250px; border-radius: 50px;">
-                <p style="color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center;"> 
-                  <a href="https://t.me/Dark_Kombat_Canal_ES"><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i></a>
-                  <a href="https://t.me/Dark_Kombat_Channel_EN"><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i></a>
+              <div style="border: 2px solid rgb(255, 255, 255);  height: 60px; width: 250px; border-radius: 50px;">
+                <p style="color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center;"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"> 
+                  <i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i>
                   <b>Unete a Nosotros</b> 
                 </p>
-                <div style="position: relative;">
-                  <span style="position: absolute; bottom: 5px; left: 20px;">ES</span>
-                  <span style="position: absolute; bottom: 5px; left: 65px;">EN</span>
-
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body" style="border: none; background-color: transparent; color: #ffffff;">
+                    <a class="nav-link" href="https://t.me/Dark_Kombat_Canal_ES" ><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff;  display: flex; justify-content: left; align-items: center;"><b style="font-size: 18px; display: flex; justify-content: center; align-items: center; margin-left: 10px;">Canal en ES</b></i></a>
+                    <a class="nav-link" href="https://t.me/Dark_Kombat_Channel_EN"><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-top: 10px; display: flex; justify-content: left; align-items: center;"><b style="font-size: 18px; display: flex; justify-content: center; align-items: center; margin-left: 10px;">Channel EN</b></i></a></div>
                 </div>
               
               </div>
@@ -391,32 +390,59 @@
             <source src="./Imagenes/Video de fondo.MP4" type="video/quicktime">
         </video>
   
-        <div class="content" id="content">
-          <div class="container">
-            <div class="row">
-              <div class="col" style="display: flex; justify-content: end;">
-                <audio id="miAudio1" autoplay loop playsinline >
-                  <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
-              </audio>
-                <button id="playButton1" class="shaking-button" style="border: none; background-color: transparent;" ><i style="color: #ffffff; font-size: 30px; margin-left: 30px;" class="bi bi-bell-fill"></i></button>
-                <button id="stopButton1" style="display:none; border: none;  background-color: transparent;"><i style="color: #ffffff; font-size: 30px; margin-left: 30px;"  class="bi bi-bell-slash-fill"></i></button>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col" style="display: flex; justify-content: end;">
+              <audio id="miAudio1" autoplay loop playsinline >
+                <source src="./Imagenes/Zelda.mp3" type="audio/mp3">
+            </audio>
+              <button id="playButton1" class="shaking-button" style="border: none; background-color: transparent;" ><i style="color: #ffffff; font-size: 30px; margin-left: 30px;" class="bi bi-bell-fill"></i></button>
+              <button id="stopButton1" style="display:none; border: none;  background-color: transparent;"><i style="color: #ffffff; font-size: 30px; margin-left: 30px;"  class="bi bi-bell-slash-fill"></i></button>
             </div>
-            <div class="row">
-              <div class="col-12" style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
-                <div style="border: 2px solid rgb(255, 255, 255);  height: 70px; width: 250px; border-radius: 50px;">
-                  <p style="color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center;"> 
-                    <a href="https://t.me/Dark_Kombat_Canal_ES"><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i></a>
-                    <a href="https://t.me/Dark_Kombat_Channel_EN"><i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i></a>
-                    <b >Unete a Nosotros</b> 
-                  </p>
-                  <div style="position: relative;">
-                    <span style="position: absolute; bottom: 3px; left: 20px;">ES</span>
-                    <span style="position: absolute; bottom: 3px; left: 65px;">EN</span>
+          </div>
+          <div class="row">
+            <div class="col"  style="display: flex; justify-content: center; align-items: center; margin-top: 20px; margin-bottom: 20px;">
+              <div style="border: 2px solid rgb(255, 255, 255);  height: 60px; width: 250px; border-radius: 50px;">
+              <!-- Button trigger modal -->
+              <p style="color: rgb(255, 255, 255); display: flex; justify-content: center; align-items: center;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop"> 
+                <i class="bi bi-telegram" style="font-size: 35px; color: #ffffff; margin-right: 10px;"></i>
+                <b >Unete a Nosotros</b> 
+              </p>
+              </div>
   
+
+              <!-- Modal -->
+              <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="background-color: #ffffff; border-radius: 30px;">
+                    <div class="modal-body" style="border: none;">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col" style="text-align: right;">
+                            <button type="button" style="color: white; background-color: #0066ff; border-radius: 30px; border: none;" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12">
+                            <a class="nav-link"  href="https://t.me/Dark_Kombat_Canal_ES"><i class="bi bi-telegram" style="font-size: 35px; color: #000000; margin-right: 10px; display: flex; justify-content: center; align-items: center;"><b style="font-size: 20px; display: flex; justify-content: center; align-items: center; margin-left: 10px;" >Canal en ES</b></i></a>
+                          </div>
+                          <div class="col-12" style="margin-top: 10px;">
+                            <a  class="nav-link" href="https://t.me/Dark_Kombat_Channel_EN"><i class="bi bi-telegram" style="font-size: 35px; color: #000000; margin-right: 10px; display: flex; justify-content: center; align-items: center;"><b style="font-size: 20px; display: flex; justify-content: center; align-items: center; margin-left: 10px;" >Channel EN</b></i></a>
+                          </div>
+                        </div>
+                        <br>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="content" id="content">
+          <div class="container">
+            
+            <div class="row">
               <div class="col-12" style="display: flex; justify-content: center; align-items: center;">
                 <div style="display: flex; justify-content: center; align-items: center;">
                   
